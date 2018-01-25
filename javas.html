@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p onclick="myfunction()">this is a paragraph</p>
+    <button onclick="salert()">click</button>
+    <p id="demo">before</p>
+<h1 onclick="changecolor(this)" onmouseout="changecolorblack(this)">javascript</h1>
+    <script>
+    function myfunction(){
+        document.getElementById("demo").innerHTML="hello world";
+    
+    }
+    
+    function salert() {
+        alert("clicked");
+    }
+    function changecolor(x){
+        x.style.color="red";
+    }
+    function changecolorblack(x){
+        x.style.color="black";
+    }
+    </script>
+</body>
+</html>
